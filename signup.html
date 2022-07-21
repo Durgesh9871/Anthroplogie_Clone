@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #form {
+            /* border: 2px solid red; */
+
+            width: 22vw;
+            margin: auto;
+            height: auto;
+            padding: 33px;
+           border-radius: 20px;
+            background-color: #F2F3F4;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        }
+
+        #form>h1 {
+            text-align: center;
+        }
+
+        form>label {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        form>input {
+            width: 100%;
+
+            height: 1.5rem;
+            margin: 0px 0px 10px 0px ;
+        }
+
+        input[type="submit"] {
+           
+            
+            height: 5vh;
+            font-size: 1.5rem;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color:grey;
+            color: black;
+            border-radius: 15px;
+        }
+        form>p>a {
+            font-size: 22px;
+            position: relative;
+            left: 17.6vw;
+            bottom: -13px;
+            text-decoration: none;
+            color: red;
+        }
+        #form>div>p{
+            text-align: center;
+            margin: 15px 0px;
+        }
+        #crossform{
+            font-size: 22px;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            cursor: pointer;
+        }
+        #form1{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+        <div id="form1">
+            
+    <form id="form">
+        <h1>Sign Up</h1>
+        <div id="crossform">
+            &#10006
+        </div>
+
+         <div><p>Welcome! It's quick and easy to set up an account</p></div>
+        <label for="">Full Name</label>
+        <input type="text" placeholder="Enter Your Name" id="name">
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter Your Email" id="email">
+        <label for="">Phone No</label>
+        <input type="number" placeholder="Enter Your No" id="no">
+        <label for="">Password</label>
+        <input type="Password" placeholder="Enter Your Password" id="pass">
+        <input type="submit" value="Sign Up" id="submit">
+        <p><a href="login.html">Sign In</a></p>
+       
+    </form>
+</div>
+
+
+</body>
+
+</html>
+
+<script>
+
+
+    let form = document.querySelector("form")
+    form.addEventListener("submit", information)
+  
+    let userinfo = JSON.parse(localStorage.getItem("userdata")) || []
+    function information(event) {
+        event.preventDefault()
+
+        let obj = {
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.no.value,
+            pass: form.pass.value,
+        }
+         userinfo.push(obj)
+         localStorage.setItem("userdata" ,JSON.stringify(userinfo))
+
+    }
+
+    let cross = document.getElementById("crossform")
+    .addEventListener("click",(e)=>{
+        window.location.href="index.html"
+    })
+    
+</script>
