@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthro Living Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+    
+
+        #navtop1 {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: teal;
+            font-family: sans-serif;
+            padding: 5px 0px;
+
+
+        }
+
+        #navtop1>div {
+            /* border: 2px solid green; */
+            width: auto;
+            margin: 0px 10px;
+            padding: 8px;
+            font-size: 18px;
+
+        }
+
+        #left {
+            position: absolute;
+            left: 10px;
+            cursor: pointer;
+            padding: 3px;
+        }
+
+        #right {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            padding: 3px;
+        }
+
+        #navtop1>div:nth-child(1) {
+            font-style: italic;
+        }
+
+        /* ------------------------------------------------------> 2nd nav  */
+
+        #navtop2 {
+            background-color: #EFE8D8;
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            font-size: 17px;
+
+
+        }
+
+        #navtop2>div {
+
+            cursor: pointer;
+            padding: 5px;
+            color: grey;
+
+            /* position: relative; */
+        }
+
+        #navtop2>div>img {
+            width: 2%;
+            position: absolute;
+            top: 0px;
+            right: 13vw;
+        }
+
+
+        #signin {
+            margin-right: 5px;
+        }
+
+        #signup {
+            margin-right: 60px;
+            margin-left: 5px;
+        }
+
+        #signin>a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        #signup>a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        /* --------------------------------------------------------------nav 3 */
+        #navtop3 {
+            border-bottom: 1px solid gray;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            position: sticky;
+            top: 0px;
+            background-color: #FCFBF1;
+            z-index: 1;
+        }
+
+        #navtop3>div {
+            /* border: 2px solid green; */
+            width: auto;
+            height: 100%;
+            margin: 0px 25px;
+
+            cursor: pointer;
+        }
+
+        #navhome {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #homepage {
+
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            padding: 0px 13px;
+            font-family: fantasy;
+            padding: 10px;
+            background-color: #FFFAFA;
+        }
+
+        #homepage>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #homepage>a:hover {
+            color: red;
+        }
+
+        #livinghomepage {
+            /* border: 1px solid grey; */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            padding: 0px 15px;
+            color: grey;
+            color: rgb(0, 0, 0, 0.5);
+
+            border-right: 0.5px solid grey;
+            padding: 15px;
+            background-color: #FFFAFA;
+
+        }
+
+        #livinghomepage>a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        #livinghomepage>a:hover {
+            color: black;
+        }
+
+        #livinghomepage>a>span {
+            font-style: italic;
+            margin: 0px 5px;
+        }
+
+        #search {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+
+        }
+
+        #searchimg>img {
+            width: 24px;
+            position: absolute;
+            right: 18vw;
+            top: 5.5px;
+        }
+
+        input[type="search"] {
+            font-size: 20px;
+            width: 70%;
+            padding: 6px;
+            border: 2px solid grey;
+            color: cornflowerblue;
+            background-color: #FFFAFA;
+        }
+
+        #cart>img {
+            width: 15%;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+        }
+
+        /* --------------------------------------------------------------------------NAVTOP 4 */
+        #navtop4page {
+            border-bottom: 1px solid grey;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #FFFFFF;
+            position: sticky;
+            top: 52.5px;
+            z-index: 1;
+        }
+
+        #navtop4page>div {
+            /* border: 2px solid black; */
+            padding: 12px;
+            font-size: 19px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            ;
+
+        }
+
+      
+        /* -----------------------------------ANTHRO Bedding-------------------------------------- */
+       
+    #mainproduct-sort{
+        /* border: 2px solid red; */
+        margin-top: 30px;
+       
+        display: flex;
+        justify-content: space-between;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+    }
+    #sort{
+        /* border: 2px solid blue; */
+        width: 17%;
+        height: 600px;
+        
+    }
+    #sort>div{
+        /* border: 2px solid yellow; */
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    #sort>div>p{
+        margin: 5px 0px 15px 0px;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size: 18px;
+
+    }
+    #filter>select{
+        display: block;
+        width: 90%;
+        font-size: 22px;
+        padding: 5px;
+        margin: 45px 0px;
+        border: none;
+    }
+    #filter>select:hover{
+       background-color: black;
+       color: whitesmoke;
+       
+       border: 2px solid red;
+    }
+
+    #productpage{
+        /* border: 2px solid green; */
+        height: auto;
+        width: 82.5%;
+        padding: 5px 40px;
+    }
+    #heading{
+         display: flex;
+         justify-content: space-between;
+          margin-bottom: 32px;
+         position: relative;
+    }
+    #heading>p{
+       font-size: 19px;
+       color: grey;
+       margin-top: 6px;
+       
+    }
+    #heading>p:nth-child(2){
+        position: absolute;
+        left: 26%;
+
+    }
+    #heading>p:nth-child(3){
+        position: absolute;
+        left: 62%;
+        font-size: 22px;
+    }
+    
+       
+    #sorting{
+        position: absolute;
+        right: 18.5%;
+        top: 6px;
+        font-size: 18px;
+        padding: 8px;
+        border: 1px solid grey ;
+        border-radius: 12px;
+    }
+    #sorting:hover{
+        border: 2px solid blue
+    }
+
+    #productItems{
+        /* border: 2px solid red ; */
+        width: 100%;
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 35px 20px;
+
+        
+    }
+    #productItems>div>img{
+        width: 100%;
+    }
+    
+    #footer1 {
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            height: 180px;
+            margin-top: 50px;
+            background-color: #FCFBF4;
+           
+        }
+
+        #signforemail {
+            display: grid;
+            padding: 20px 150px 20px 150px;
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        #signforemail>input[type="email"] {
+            width: 55%;
+            height: 22px;
+            font-size: 22px;
+            padding: 10px;
+        }
+
+        #signforemail>input[type="submit"] {
+            width: 10%;
+            position: absolute;
+            right: 200px;
+            top: 48px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #173F5F;
+            color: whitesmoke;
+        }
+        #signforemail>input[type="submit"]:hover{
+            background-color: white;
+            color: black;
+        }
+        #signforemail>p:nth-child(3){
+            width: 60%;
+           font-size: 14px;
+            margin-top: 15px;
+            line-height: 18px;
+            color: grey;
+        }
+        #footer1>p{
+            text-align: center;
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 10px 64px 0px 0px;
+            color: grey;
+        }
+
+        /* ------------------------------------FOOTER 2------------------------------ */
+
+        #footer2{
+            /* border-top: 0.5px solid grey; */
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 150px 20px 150px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #footer2>div>p{
+          font-weight: bold;
+           margin-bottom: 10px;
+        }
+        #footer2>div>div{
+            line-height: 35px;
+            cursor: pointer;
+            font-size: 13px;
+            color: grey;
+        }
+        #footer2>div>div:hover{
+          text-decoration: underline;
+          color: red;
+
+        }
+
+        #footerimage{
+           /* border: 2px solid red; */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+           margin-top: 40px;
+
+        }
+        #footerimage>div>img{
+            width: 100%;
+        }
+        #footerimage>div:nth-child(2)>img{
+            width: 29px;
+            position: absolute;
+            left: 55vw;
+            top: 4px;
+        }
+        #footerimage>div:nth-child(3)>img{
+            width: 29px;
+            position: absolute;
+            left: 58vw;
+            top: 4px;
+        }
+        #footerimage>div:nth-child(4)>img{
+            width: 29px;
+            position: absolute;
+            left: 61vw;
+            top: 4px;
+        }
+        #footerimage>div:nth-child(5)>img{
+            width: 29px ;
+            position: absolute;
+            left: 64vw;
+            top: 4px;
+        }
+        
+        #freeshipimg{
+            width: 90%;
+            margin:20px auto 0px auto;
+            
+        }
+        #freeshipimg>img{
+            width: 100%;
+        }
+           
+        #footerlast{
+            /* border: 2px solid red; */
+            margin: 40px 0px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            color: gray;
+            cursor: pointer;
+        }
+        #footerlast>div{
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+        #footerlast>div:hover{
+            text-decoration: underline;
+            color: red;
+            
+        }
+        #mainfooter2{
+            background-color: #FCFBF4;
+        }
+
+
+        /* Nav Link ------------------------ */
+        #navtop4page>div>a{
+            text-decoration: none;
+            color: black;
+        }
+        #navtop4page>div>a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        
+        
+
+        
+    
+        
+  
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="navtop1">
+        <div>lifetime</div>
+        <div>EXTRA 40% OFF ON ALL SALE ITEMS</div>
+        <div>shop's summery hottest style</div>
+        <div>all sales final see details</div>
+        <button id="left"><span>
+                < </span></button>
+        <button id="right"><span>></span></button>
+
+    </div>
+    <div id="navtop2">
+        <div id="img"><img src="https://static.thenounproject.com/png/2409350-200.png" alt=""></div>
+        <div id="signin"><a href="login.html">Sign In</a> </div>
+        <span>/</span>
+        <div id="signup"><a href="signup.html">Sign Up</a></div>
+    </div>
+    <div id="navtop3">
+        <div id="navhome">
+            <div id="homepage"><a href="index.html">Anthropologie</a></div>
+            <div id="livinghomepage"><a href="anthroLiving.html">anthro <span>living</span>home</a></div>
+        </div>
+
+        <div id="search">
+            <div id="searchimg"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAACTCAMAAACAqbpBAAAAaVBMVEX39/cAAAD////6+vrz8/Pe3t6EhIR7e3uHh4fV1dXu7u7q6up2dnaoqKjl5eXJycllZWU6OjpYWFhMTEyVlZWxsbEXFxdTU1O6urozMzNtbW0ICAhBQUESEhIuLi5fX18gICCfn58nJydkBVYJAAAF7ElEQVR4nO1b6ZKiMBCO3ZyC4AHKMI7HvP9DLugcLt2BpBN1q9bvz1pbReZLp+90lHrhhf8ciACA2P+C719PpIJFWZ+rKI7jPEqqc5POn0QKISjKZLP9mP2Nj8PynGYID6XUCSatjtuZDqu27uT0KEqIYXXScvnGus4ewahTmrKdZtNjn8zvzghUszcic0Wc3pVRJ5u1BZsO2yiDu9GBNLdjc8FC3YcRBuehcZthld6DEIQ7EZselXcPiVDLhHPFOvQrIsTKgU2Hz9InIZxbmhWDsz9CMLfxOTpUvghB+umBTucclRetxuzghc5sFvmQEBa+6PR2705HvY3+idO+7bKwNAzDtKyr3Zs+CbkQcpUQqnZk+VXSFNcs9YLul0oX+fvIF42jhCDRLv2ZlwHNA7v/mdcbLaUPNz8EjV70hSZP7uSE5VL32VvgICFMNZnXNlKjiQ1Cqot2rZyOAo1b3k+mWQiq1hCqxScGZ3bB97NR0geZxhQK4YlhwYb0ralKouKNIRbyAVYpNxYJKNSsoclsDEturd3cZnfQcCLeSOgo5CxkbWmuPKFacGLAiefNOkSzHmxlH+kRGVs/CNJO1kjtbR5LRhVFhQJGdKFNYLsKMKVWIrMLxahQaXlgOKdrHCVsFK+JS8utwYI5LWkkxJguZmmnATV2ebaJAeVjV25gSvK8z1CeKACt3pZWqzHH5ZKMY0aSXrvtAT0uB/GwAmps9ofk89wp8cWCLmjBB1O6HbdEHEkudLLgQ338IXPjAzRbtLB46pxbx8IJQ1Jzm7toDEgslSe9X0vCZrikuQfCgpin43FxhZy5QmM6jIBvc0c6TB60NP6WZqouRdPXmuFwzY3xHuleIufGBGbD0nJlXPfQaOGh2RYMe2zmEYN694UHPsMQtDXnQ2zB1dx7DKu5dwc+VsFPg2HEeDfO7/45PkR/7nFeHw58POizGsagk7n+3MPeSU/dwt5JcuDDHw4zcnN/SOOFeazRrknixc44XnDx1Dm+u8TTYjX8WNpj++VDqvjYPN/wn48pJFdEFjaCJF+1rbfJii756j3yeVpgWuTzXL3jdrGPpDf6YSNxIHzs6m1Ch1i7Xf1NqwE3C3Otl5njNjdPCqZgOVj1Azz3W5jbcjuPjyQa2zUABqsxzT/LjIHt1wkJoYd+HbelnfAqjetnWvcDgNmTsN/LdA+t+70e++E0ks5me+t+OOKRLnMSEGJvhAX1AXvdZH8Rwt6nHKzFo7iQM+tv42zvm5hFZNnL/e7j9gI2/WLsfezK4s6J82Iz6X1lF3XYYYyDqTJiwFhWh7V07kazPbPxNISQsdALZH5Mjc0DTDKCQLOZHtJyDkPdpGocjE05I0JKM6hbCQslxF7qfu0xRM2iCEE5ymbWXz8IY+HIvE1bMqPgCN1JGUzjSSVES58bbKMmDH4Hkrp/52mt0+KhhIRGPzGvddi156a8zmstkuPGfIpTOEyGmY/hQw5SCRV+xg8pEpljxJC0FzwhkhWZkE2Zr5iQhE6fTWvn01wJySTkPG+sRS7UIebC0Q8SYaMCPMxAs2iFoQPHIvYY9hPKl0in66FgirIpnBZsfXqLVtpbQpwM3AO8xwV0GjshIaHZ9yKCxjBeXv9QeNk6qomHJLm8+4aqXJq9J1olxbdmYDBByGWWHSCspo+trYObTY/PUbtJqNcjDKu1fo59v+zfo/39iZpQaqFj/GEEGDYV45JO+aLMmMdxkxKKXZ9mXQbU52lzTuK8zfM8qhZlqLTvGScl1Pp4D3Eh9Ysx14ZsR+BWQg9+mIncaOQtlg8nNCUhP09YLDChQ8vHPlztJDTlqR9Kx8DKPL7LMiM0Ee1dJ8PsCY0HV5d7EiGhUbP3MZphTUgfOvbZw+n0hLRtE6/vHi0IaST0cG3+YcRKaClplPvhww3ob1weYzkzIhJaO09luBGK/yk6Qz+0eTKdgdkfn6k7P4R+juz4dOn0wK9+8mnx4LxHB8QqSqLK8/N4F1zLgGezeOGFF1544YUXXniB4g+Mh0NVPj9zcgAAAABJRU5ErkJggg=="
+                    alt=""></div>
+            <div><input type="search" placeholder="Search Items"></div>
+            <div id="cart"><img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="navtop4page">
+        <div id="page1">Page 1</div>
+        <div id="page2"><a href="bedding.html">Bedding</a></div>
+        <div id="page3"> <a href="sale.html">Sale</a></div>
+    </div>
+    <!-- -------------------------------Bedding code------------------- -->
+    <div id="mainproduct-sort">
+       <div id="sort">
+        <div> <p>Filter by :</p>
+            <hr>
+        </div>
+          <div id="filter">
+            <select id="product-type">
+            <option value="product">Product Type</option>
+            <option value="pillowshamps">Pillow Shamps</option>
+            <option value="sheets">Sheets</option>
+            <option value="throwpillows">Throw Pillows</option>
+            <option value="throws">Throws</option>
+            <option value="towel">Towel</option>
+        </select>
+
+        <select id="Price">
+            <option value="p">Price</option>
+            <option value="25">Less Than $25</option>
+            <option value="50">$25-$50</option>
+            <option value="100">$50-$100</option>
+            <option value="200">$100-$200</option>
+            <option value="500">$200-$500</option>
+        </select>
+
+        <select  id="color">
+          <option value="no">Color</option>
+          <option value="white">White</option>
+          <option value="blue">Blue</option>
+          <option value="beige">Beige</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+          <option value="grey">Grey</option>
+          <option value="orange">Orange</option>
+          <option value="black">Black</option>
+          <option value="pink">Pink</option>
+          <option value="red">Red</option>
+        </select>
+        
+
+
+
+            
+          </div>
+       </div>
+        <div id="productpage">
+        <div id="heading">
+            <h2>Bedding</h2>
+            <p>Search Results : <span id="counting">0</span> </p>
+            <p>sort</p>
+            <select  id="sorting">
+                <option value="">Featured</option>
+                <option value="ascending">Price Low To High</option>
+                <option value="descending">Price High To Low</option>
+            </select>
+            
+        </div>
+        <div id="productItems">
+            
+        </div>
+    </div>
+    </div>
+
+    <!-- ------------------------FOOTER -->
+    <div id="footer1">
+        <div id="signforemail">
+            <h2>Sign Up For Email</h2>
+            <p>Email Adress</p>
+            <p>Receive early access to new arrivals, sales, exclusive content, events and much more!
+            </p>
+
+            <input type="email" placeholder="Enter Your Email">
+            <input type="submit">
+        </div>
+            <p>By signing up, you will receive Anthropologie offers, promotions and other commercial messages. You are also agreeing to Anthropologie’s Privacy Policy. You may unsubscribe at any time.</p>
+
+    </div>
+
+    <div id="mainfooter2">
+    <div id="footer2">
+        <div id="help"><p>Help</p>
+            <div>Track Your Order</div>
+            <div>Start A return Or Exchange</div>
+            <div>Return & Exchanges</div>
+            <div>Shipping</div>
+            <div>Customer Services</div>
+            <div>Current Promotion</div>
+            <div>Product Recalls</div>
+        </div>
+        <div id="aboutus"><p>About Us</p>
+            <div>Our Story</div>
+            <div>Events</div>
+            <div>A Greater Good</div>
+            <div>Diversity & Enclusion</div>
+            <div>Stories</div>
+        </div>
+        <div id="services"><p>Services</p>
+           <div>Anthro Perks</div>
+           <div>Gift Cards</div>
+           <div>Anthro Living B2B</div>
+           <div>Furniture: Guides & Services</div>
+           <div>Store Pickup & Collection Picks</div>
+           <div>Klarna</div>
+        </div>
+        <div id="connect"><p>Connect</p>
+            <div>Contanct Us</div>
+            <div>Stay Connected</div>
+            <div>Careers</div>
+            <div>Styling Services</div>
+            <div>Reques A Catalog</div>
+        </div>
+        
+    </div>
+    <div id="footerimage">
+        <div><img src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg" alt=""> </div>
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAAY1BMVEUeiOX///8AguQrjObn8PsRheTc6vrx9v0AeeMAgOQAfOP6/P73+v4AfuN5ru2lxPG00fRImOiPu+89kue81vWawfCBse1kpOvD2vZZnunV5fnL3/dwqeuIt++oyvOtzfMAdOLKCLszAAAE4ElEQVRoge2bbZOjIAzHFcStUHdt1T7Y2vb7f8rTtSoqmCBY72bu/+pmbtZfw0NIQvD8LeX9py+QEPtGQnyWHib56XygLOacR4wezqc8Cz9BD5KT9+IRYYx5rap/k4jv6CkLVqSLW0kZIZ5OhLD0WJjMA54elukMuR0GQtIjfhKQdHG5VqMNsd8/ILpmyAHA0R8px6HfPyCmP87oeRwZoBuROEfYD9MTD5xtNd9LrOnFdRm7VnQt7OhH5FJTi5GjBT1MzSd8ZH4664Dm6A+jha4xnz8W0cV9+YzLInf94tfSv1I38AqffpnSC89+1FsxT+d7NfSLK8MbPLmZ0JPYJbxSpPY8Snri1PJfESVeRb+5trxWrBp8Bb1wb3ktolh6U3rgcLXLYnS68Sb0fboOvMKnE7czoZ/XGfda5A7Rc9tzZRY/9vkjeshXhHseD2bpq016I5bO0cv1Jr1RlOvpK+10WcNdL9PFdd1xr8XOOvoTMJ3pRQg2ACSZmi6Av6O3UKcie5T0hfoBjKrpOWA6BTJU8TjECD6R0hyJDm11iF7pdkA4K6KiQ6Zj6L74gbdN9JzSoVnH0auYDB78/rTp6BkYUuDoCKfBu2Xf0eG9jqT7F8iOfs+39BBeLli6f4Ks7xxeSz/CqwVNDyBLuuTyTReIw21A34teE/w38LEuynnTMeeLTP+Kaaf0esqGdDAoJsWAjjlaB/SdbAqLR8kK5LjaoX/TKQzX02vFg2wB3ECpTA8w58Ms3fPkVQH6TRZIdFTqNE+P5BoZ+L33OdvQwR0K09lBooMpMCklOoINjrwcpxSw45Toim+Z0/f9f4cgfdfTcVG8UzoPO3qCSmAgujChR1lHBzcIhi7HazeQTvKODvllDJ18m6x5j506+tkBPZJ9LRSbt2d8TRcHe/owO4bP68Y9/NIxXn6eTg6DwgTCHCre9D0ufRvQX3IiE71GtegX/DW2b+m4pF2m7+/fncp8dLz7GSaqt6DP645YR3wteoip961Gx5gu0XGVIiz9iSp1Rh0dl3oj6bhDo1/zInVIfyCrL2m73zHOAUkPvpH1vt7XLfDzan0d0TeHvZ9fcMYpFD6uHF/zks448/N9n//0ysvTme640cWhdL4viG1eRBYzLrVJsY2buM5IUlznJqY1khTTotI4t3Q5nneQy5hpkMs4yOMM6XIe5yKHNdIgh/Uxnt4lfZC/Y4pGLumj2oVx3caSPqzbmNas7OjjmpVpvc6OPq7XmdYqLenjWqVhndaKPq3TGtaorej8MqHDyZwzOp3W533wVsEVXbqNXXgvY0OPfRXd5E7Kgk5yJd3kPq5YfletuY8Dz1n58nExfNB8MrgF/sQ97NXX0T9xB11o6X65Zt9DrWhYYvmbeg827ruAPZ6NoJ6TjfttNu418oO14B6iz2rjHjPEJfISYfvrMAVuY+F7C7ElNwPFBn2V1eA7dbmGPaWO+2mprpdc20scbNlLXLmds5vRX9RHXSnfsIfcr/vnbUffon/er3sS7N4O5POfX/PdBLF9N+Fv+2akksgNqr+tImjQsfRKPxTTOdeJ8fQJfxRN90Vm8E6KnC9O30nVCo+bvRH7lSiO9fs43RCwNd/HNQqSku40bwPLZM23gZ3CrHkXSWLOySffRUrq3oQu/8S/+h7236f/AbnaQrVevJ8oAAAAAElFTkSuQmCC" alt=""></div>
+        <div><img src="data:image/jpeg;base64,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" alt=""></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05R_5MvYtgUERADXMOULxgnMg150xJuGpAXgUwlOMlw&s" alt=""></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiAIhqlwCH8MLo6BCZcbfrxvqcc-loZ6bvNyTIPygx0Q&s" alt=""></div>
+        
+    </div>
+      <div id="freeshipimg">
+        <img src="https://images.ctfassets.net/5de70he6op10/2Lh06CXT4AzVnj4LxvGsQD/a424e10a3b8c9e2e270dc22505bfbfa6/022421_SiteFooter_SMS_SIgnUp.jpg" alt="">
+      </div>
+       <div id="footerlast">
+         
+            <div>Us</div> |
+            <div>France</div> |
+            <div>Germany</div> |
+            <div>Italy</div> |
+            <div>Spain</div> |
+            <div>Uk</div> |
+         
+       </div>
+    </div>
+    
+    
+  
+
+
+</body>
+
+</html>
+<script>
+    let navtop1data = [
+        {
+            name1: "lifetime",
+            name2: "EXTRA 40% OFF ON ALL SALE ITEMS",
+            name3: "shop's summery hottest style",
+            name4: "all sales final see details",
+            name5: "teal",
+        },
+        {
+            name1: "new styles added!",
+            name2: "25% OFF SELECT BEDDING, PILLOWS, RUGS & MORE",
+            name3: "shop",
+            name4: "online executive-see details",
+            name5: "orange"
+        },
+        {
+            name1: "look polished.",
+            name2: "dress sharp",
+            name3: "JUST IN: SUIT & TIE",
+            name4: "start shopping",
+            name5: "cornflowerblue"
+        }
+    ]
+
+    let left = document.querySelector("#left")
+    let right = document.querySelector("#right")
+    let currentvalue = 0;
+
+    right.addEventListener("click", (e) => {
+        currentvalue++;
+        if (currentvalue == navtop1data.length) {
+            currentvalue = 0;
+        }
+        document.querySelector("#navtop1>div:nth-child(1)").innerText = navtop1data[currentvalue].name1
+        document.querySelector("#navtop1>div:nth-child(2)").innerText = navtop1data[currentvalue].name2
+        document.querySelector("#navtop1>div:nth-child(3)").innerText = navtop1data[currentvalue].name3
+        document.querySelector("#navtop1>div:nth-child(4)").innerText = navtop1data[currentvalue].name4
+        document.querySelector("#navtop1").style.background = navtop1data[currentvalue].name5
+
+    })
+    left.addEventListener("click", (e) => {
+        currentvalue--;
+        if (currentvalue < 0) {
+            currentvalue = navtop1data.length - 1;
+        }
+        document.querySelector("#navtop1>div:nth-child(1)").innerText = navtop1data[currentvalue].name1
+        document.querySelector("#navtop1>div:nth-child(2)").innerText = navtop1data[currentvalue].name2
+        document.querySelector("#navtop1>div:nth-child(3)").innerText = navtop1data[currentvalue].name3
+        document.querySelector("#navtop1>div:nth-child(4)").innerText = navtop1data[currentvalue].name4
+        document.querySelector("#navtop1").style.background = navtop1data[currentvalue].name5
+
+    })
+
+
+    // border----------------------------------------------------------------------change
+    let title = document.querySelector("title").innerText
+    if (title == "Anthro Living Home") {
+        document.querySelector("#livinghomepage").style.borderTop = "6px solid brown"
+
+    }
+    if (title == "Anthropologie") {
+        document.querySelector("#homepage").style.borderTop = "7px solid teal"
+    }
+      
+ 
+    let beddingdata = [
+        {
+            img:"https://images.ctfassets.net/5de70he6op10/3F3IbUamsm7bOHdLAnxcv6/c14d4dc676354ad3f424c8805cc62a4c/July22_25OffBeddingPillowsBath_OutCatTile_04.jpg?w=546&q=80&fm=webp" ,
+            productname:"" ,
+            price:"" ,
+            producttype: "" ,
+            color:"" ,
+        },
+        {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407863AA_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Bronte Duvet Cover" ,
+            price:"98" ,
+            producttype: "sheets" ,
+            color:"white" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45457843AA_031_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Woven Bronte Pillow" ,
+            price:"66" ,
+            producttype: "throwpillows" ,
+            color:"pink" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/65336273_004_b3?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Moroccan Wool Blanket" ,
+            price:"228" ,
+            producttype: "throws" ,
+            color:"grey" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407866AD_045_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Print Fresh Sheet" ,
+            price:"208" ,
+            producttype: "sheets" ,
+            color:"blue" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45409388AA_067_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Joaquin Quilt" ,
+            price:"228" ,
+            producttype: "pillowshamps" ,
+            color:"pink" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45457823AA_011_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Pillow Cover" ,
+            price:"128" ,
+            producttype: "throwpillows" ,
+            color:"white" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/66667742_095_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Parasol Beach Blanket" ,
+            price:"73" ,
+            producttype: "towel" ,
+            color:"blue" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407437AD_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Organic Sateen Sheet" ,
+            price:"43" ,
+            producttype: "sheets" ,
+            color:"pink" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45457831AA_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Suillivan Pillow" ,
+            price:"98" ,
+            producttype: "pillowshamps" ,
+            color:"red" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/56258999_012_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Rifle Paper Pillow" ,
+            price:"90" ,
+            producttype: "throwpillows" ,
+            color:"white" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407835AD_040_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Percale Sheet Set" ,
+            price:"58" ,
+            producttype: "sheets" ,
+            color:"black" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407869AG_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Organic Euro Shamp" ,
+            price:"66" ,
+            producttype: "pillowshamps" ,
+            color:"green" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45457853AA_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Woven Silk Pillow" ,
+            price:"66" ,
+            producttype: "throwpillows" ,
+            color:"red" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/66937251_095_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Birdie Shamps" ,
+            price:"66" ,
+            producttype: "pillowshamps" ,
+            color:"red" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/69511277_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Alternative Pillow" ,
+            price:"80" ,
+            producttype: "sheets" ,
+            color:"white" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4545Z073AA_099_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Andersen Wool Pillow" ,
+            price:"78" ,
+            producttype: "throwpillows" ,
+            color:"blue" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/68892447_018_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Novella Throw Blanket" ,
+            price:"128" ,
+            producttype: "throws" ,
+            color:"black" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/64878507_074_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Velvet Minarva Pillow" ,
+            price:"88" ,
+            producttype: "throwpillows" ,
+            color:"yellow" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407416AC_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Blend Bed Skirt" ,
+            price:"108" ,
+            producttype: "throws" ,
+            color:"grey" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45457426AA_035_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Blend Pillow" ,
+            price:"51" ,
+            producttype: "pillowshamps" ,
+            color:"yellow" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/68241033_095_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Lake Side Pillow" ,
+            price:"78" ,
+            producttype: "throwpillows" ,
+            color:"pink" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4540Z020AB_011_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Embroidered Livia Shamps" ,
+            price:"88" ,
+            producttype: "pillowshamps" ,
+            color:"white" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/69175172_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Jacquard Chenille Roseto" ,
+            price:"88" ,
+            producttype: "throws" ,
+            color:"blue" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407803AD_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Sateen Sheet set" ,
+            price:"150" ,
+            producttype: "sheets" ,
+            color:"white" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407872AA_054_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Blend Duvet Cover" ,
+            price:"125" ,
+            producttype: "throws" ,
+            color:"pink" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4540Z087AB_099_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Organic Sateen Shamps" ,
+            price:"98" ,
+            producttype: "pillowshamps" ,
+            color:"blue" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/65858854_066_b3?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Floral Printed Blanket" ,
+            price:"96" ,
+            producttype: "throws" ,
+            color:"grey" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4545Z025AA_099_b3?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Velvet Pillow" ,
+            price:"98" ,
+            producttype: "pillowshamps" ,
+            color:"green" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/45407355AB_044_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Lustered Velvet Shamps" ,
+            price:"88" ,
+            producttype: "pillowshamps" ,
+            color:"grey" ,
+        }, {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4545Z009AA_052_b13?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Velvet Trola Pillow" ,
+            price:"78" ,
+            producttype: "throwpillows" ,
+            color:"pink" ,
+        },
+        {
+            img:"https://images.urbndata.com/is/image/Anthropologie/68892447_018_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Novella Throw Blanket" ,
+            price:"128" ,
+            producttype: "throws" ,
+            color:"black" ,
+        }
+    ]
+    let total = document.querySelector("#counting")
+     
+    display(beddingdata)
+
+//  -----------------------------------FILTER BY PRODUCT TYPE 
+    let productType = document.querySelector("#product-type")
+    productType.addEventListener("change" ,(e)=>{
+         let productValue = document.querySelector("#product-type").value 
+         if(productValue == "product"){
+            display(beddingdata)
+         }
+         else{
+         let productSort = beddingdata.filter((e)=>{
+             return e.producttype==productValue
+         })
+         display(productSort)
+         }
+    })
+
+    // FILTER BY PRICE ----------------------------------------------------------->
+      
+    let price = document.querySelector("#Price")
+    price.addEventListener("change" ,(e)=>{
+        let priceValue = document.querySelector("#Price").value
+           if(priceValue == "p"){
+            display(beddingdata)
+            
+        }
+
+           else{
+                     if(priceValue == "25"){
+                let less = beddingdata.filter((e)=>{
+                     return Number(e.price) < Number(priceValue) && (e.productname !== "")
+                })
+                display(less)
+           }
+           else if(priceValue == 50){
+            let less = beddingdata.filter((e)=>{
+                     return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(25))
+                })
+                display(less)
+            }
+            else if(priceValue == 100){
+            let less = beddingdata.filter((e)=>{
+                     return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(50))
+                })
+                display(less)
+            }
+            else if(priceValue == 200){
+            let less = beddingdata.filter((e)=>{
+                     return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(100))
+                })
+                display(less)
+            }
+            else if(priceValue == 500){
+            let less = beddingdata.filter((e)=>{
+                     return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(200))
+                })
+                display(less)
+            }
+            
+        }
+
+    })
+
+    // filter by color ----------------------------------------->
+      
+    let color = document.querySelector("#color")
+    color.addEventListener("change",(e)=>{
+        let colorValue = document.querySelector("#color").value 
+           
+        if(colorValue == "no"){
+            display(beddingdata)
+        }
+        else{
+        let colorsort = beddingdata.filter((e)=>{
+              return e.color == colorValue
+        })
+        display(colorsort)
+    }
+    })
+    
+    // ---------------------------------------------------------------ascending sort ---
+
+    let ascen = document.querySelector("#sorting")
+    ascen.addEventListener("change" ,(e)=>{
+          let ascenValue = document.querySelector("#sorting").value 
+           
+          if(ascenValue == "ascending"){
+            beddingdata.sort(function(a,b){
+                if(+a.price > +b.price) return 1 
+                if(+a.price < +b.price) return -1 
+            })
+            display(beddingdata)
+        }
+        if(ascenValue == "descending"){
+            beddingdata.sort(function(a,b){
+                if(+a.price > +b.price) return -1 
+                if(+a.price < +b.price) return 1 
+            })
+            display(beddingdata)
+        }
+    })
+    
+    function display(beddingdata){
+
+          
+
+
+
+
+        document.querySelector("#productItems").innerHTML = ""
+        let count = 0 ;
+    beddingdata.forEach(function (elem){
+        count++
+        let div = document.createElement("div")
+
+        let img = document.createElement("img")
+        img.src=elem.img
+        let name = document.createElement("p")
+        name.innerText=elem.productname
+        name.style.fontSize="14px"
+        let price = document.createElement("p")
+        if(elem.price !== ""){
+        price.innerText ="$"+elem.price
+        price.style.color="grey"
+        price.style.fontSize="14px"
+        }
+
+
+        div.append(img,name,price)
+        document.querySelector("#productItems").append(div)
+    })
+
+    if(count == 0){
+        total.innerText="Sorry Item Is Out Of Stock"
+    }
+    else{
+
+        total.innerText = count
+    }
+    
+
+}
+
+
+
+
+ 
+  
+</script>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthro Living Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            height: 20000px;
+        }
+        #navtop4page>div>a{
+            text-decoration: none;
+            color: black;
+        }
+        #navtop4page>div>a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        #navsale>a>img{
+            width: 100%;
+        }
+
+
+        #navtop1 {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: teal;
+            font-family: sans-serif;
+            padding: 5px 0px;
+
+
+        }
+
+        #navtop1>div {
+            /* border: 2px solid green; */
+            width: auto;
+            margin: 0px 10px;
+            padding: 8px;
+            font-size: 18px;
+
+        }
+
+        #left {
+            position: absolute;
+            left: 10px;
+            cursor: pointer;
+            padding: 3px;
+        }
+
+        #right {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            padding: 3px;
+        }
+
+        #navtop1>div:nth-child(1) {
+            font-style: italic;
+        }
+
+        /* ------------------------------------------------------> 2nd nav  */
+
+        #navtop2 {
+            background-color: #EFE8D8;
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            font-size: 17px;
+
+
+        }
+
+        #navtop2>div {
+
+            cursor: pointer;
+            padding: 5px;
+            color: grey;
+
+            /* position: relative; */
+        }
+
+        #navtop2>div>img {
+            width: 2%;
+            position: absolute;
+            top: 0px;
+            right: 13vw;
+        }
+
+
+        #signin {
+            margin-right: 5px;
+        }
+
+        #signup {
+            margin-right: 60px;
+            margin-left: 5px;
+        }
+
+        #signin>a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        #signup>a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        /* --------------------------------------------------------------nav 3 */
+        #navtop3 {
+            border-bottom: 1px solid gray;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            position: sticky;
+            top: 0px;
+            background-color: #FCFBF1;
+            z-index: 1;
+        }
+
+        #navtop3>div {
+            /* border: 2px solid green; */
+            width: auto;
+            height: 100%;
+            margin: 0px 25px;
+
+            cursor: pointer;
+        }
+
+        #navhome {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #homepage {
+
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            padding: 0px 13px;
+            font-family: fantasy;
+            padding: 10px;
+            background-color: #FFFAFA;
+        }
+
+        #homepage>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #homepage>a:hover {
+            color: red;
+        }
+
+        #livinghomepage {
+            /* border: 1px solid grey; */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            padding: 0px 15px;
+            color: grey;
+            color: rgb(0, 0, 0, 0.5);
+
+            border-right: 0.5px solid grey;
+            padding: 15px;
+            background-color: #FFFAFA;
+
+        }
+
+        #livinghomepage>a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        #livinghomepage>a:hover {
+            color: black;
+        }
+
+        #livinghomepage>a>span {
+            font-style: italic;
+            margin: 0px 5px;
+        }
+
+        #search {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+
+        }
+
+        #searchimg>img {
+            width: 24px;
+            position: absolute;
+            right: 18vw;
+            top: 5.5px;
+        }
+
+        input[type="search"] {
+            font-size: 20px;
+            width: 70%;
+            padding: 6px;
+            border: 2px solid grey;
+            color: cornflowerblue;
+            background-color: #FFFAFA;
+        }
+
+        #cart>img {
+            width: 15%;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+        }
+
+        /* --------------------------------------------------------------------------NAVTOP 4 */
+        #navtop4page {
+            border-bottom: 1px solid grey;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #FFFFFF;
+            position: sticky;
+            top: 52.5px;
+            z-index: 1;
+        }
+
+        #navtop4page>div {
+            /* border: 2px solid black; */
+            padding: 12px;
+            font-size: 19px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            ;
+
+        }
+
+        #navsale {
+            width: 90%;
+
+            height: aut0;
+            /* border: 2px solid red; */
+            margin: 35px auto;
+        }
+
+        #navsale>a>img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+
+        /* -----------------------------------ANTHRO HOME-------------------------------------- */
+        #homepageimg1 {
+            /* border: 2px solid red; */
+            width: 90%;
+            margin-left: 5%;
+            height: auto;
+
+        }
+
+        #homepageimg1>img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navtop1">
+        <div>lifetime</div>
+        <div>EXTRA 40% OFF ON ALL SALE ITEMS</div>
+        <div>shop's summery hottest style</div>
+        <div>all sales final see details</div>
+        <button id="left"><span>
+                < </span></button>
+        <button id="right"><span>></span></button>
+
+    </div>
+    <div id="navtop2">
+        <div id="img"><img src="https://static.thenounproject.com/png/2409350-200.png" alt=""></div>
+        <div id="signin"><a href="login.html">Sign In</a> </div>
+        <span>/</span>
+        <div id="signup"><a href="signup.html">Sign Up</a></div>
+    </div>
+    <div id="navtop3">
+        <div id="navhome">
+            <div id="homepage"><a href="index.html">Anthropologie</a></div>
+            <div id="livinghomepage"><a href="anthroLiving.html">anthro <span>living</span>home</a></div>
+        </div>
+
+        <div id="search">
+            <div id="searchimg"><img
+                    src="data:image/png;base64,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"
+                    alt=""></div>
+            <div><input type="search" placeholder="Search Items"></div>
+            <div id="cart"><img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="navtop4page">
+        <div id="page1">Page 1</div>
+        <div id="page2"><a href="bedding.html">Bedding</a></div>
+        <div id="page3"> <a href="sale.html">Sale</a></div>
+    </div>
+    <div id="navsale">
+        <a href="sale.html">
+        <img src="https://images.ctfassets.net/5de70he6op10/4tWYuCwv5L2JfLs81bSPiC/e72919ba5d1bf6428d6403c0739ff146/071522_40offSOS_HPG_SecondaryBanner_LS_limitedtime.jpg?w=2882&q=80&fm=webp"
+            alt="" id="salepage">
+        </a>
+    </div>
+    <div id="homepageimg1">
+        <img src="https://images.ctfassets.net/5de70he6op10/7G6nSOn2Nzus11UKgfz0kh/87614dd636f30927f32fdf4a4c95be45/HomeL1_Gateway_LS_01.jpg?w=2640&q=80&fm=webp"
+            alt="">
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    let navtop1data = [
+        {
+            name1: "lifetime",
+            name2: "EXTRA 40% OFF ON ALL SALE ITEMS",
+            name3: "shop's summery hottest style",
+            name4: "all sales final see details",
+            name5: "teal",
+        },
+        {
+            name1: "new styles added!",
+            name2: "25% OFF SELECT BEDDING, PILLOWS, RUGS & MORE",
+            name3: "shop",
+            name4: "online executive-see details",
+            name5: "orange"
+        },
+        {
+            name1: "look polished.",
+            name2: "dress sharp",
+            name3: "JUST IN: SUIT & TIE",
+            name4: "start shopping",
+            name5: "cornflowerblue"
+        }
+    ]
+
+    let left = document.querySelector("#left")
+    let right = document.querySelector("#right")
+    let currentvalue = 0;
+
+    right.addEventListener("click", (e) => {
+        currentvalue++;
+        if (currentvalue == navtop1data.length) {
+            currentvalue = 0;
+        }
+        document.querySelector("#navtop1>div:nth-child(1)").innerText = navtop1data[currentvalue].name1
+        document.querySelector("#navtop1>div:nth-child(2)").innerText = navtop1data[currentvalue].name2
+        document.querySelector("#navtop1>div:nth-child(3)").innerText = navtop1data[currentvalue].name3
+        document.querySelector("#navtop1>div:nth-child(4)").innerText = navtop1data[currentvalue].name4
+        document.querySelector("#navtop1").style.background = navtop1data[currentvalue].name5
+
+    })
+    left.addEventListener("click", (e) => {
+        currentvalue--;
+        if (currentvalue < 0) {
+            currentvalue = navtop1data.length - 1;
+        }
+        document.querySelector("#navtop1>div:nth-child(1)").innerText = navtop1data[currentvalue].name1
+        document.querySelector("#navtop1>div:nth-child(2)").innerText = navtop1data[currentvalue].name2
+        document.querySelector("#navtop1>div:nth-child(3)").innerText = navtop1data[currentvalue].name3
+        document.querySelector("#navtop1>div:nth-child(4)").innerText = navtop1data[currentvalue].name4
+        document.querySelector("#navtop1").style.background = navtop1data[currentvalue].name5
+
+    })
+
+
+    // border----------------------------------------------------------------------change
+    let title = document.querySelector("title").innerText
+    if (title == "Anthro Living Home") {
+        document.querySelector("#livinghomepage").style.borderTop = "6px solid brown"
+
+    }
+    if (title == "Anthropologie") {
+        document.querySelector("#homepage").style.borderTop = "7px solid teal"
+        
+
+    }
+
+
+</script>
