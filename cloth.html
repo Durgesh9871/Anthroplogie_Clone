@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthropologie</title>
+    <title>Clothing</title>
     <style>
-        * {
+         * {
             margin: 0;
             padding: 0;
 
         }
 
-      
+    
 
         #navtop1 {
             /* border: 2px solid red; */
@@ -138,7 +137,7 @@
         }
 
         #homepage {
-            border-top: 7px solid teal;
+
             border-left: 1px solid grey;
             border-right: 1px solid grey;
             height: 100%;
@@ -150,11 +149,13 @@
             padding: 10px;
             background-color: #FFFAFA;
         }
-        #homepage>a{
+
+        #homepage>a {
             text-decoration: none;
             color: black;
         }
-        #homepage>a:hover{
+
+        #homepage>a:hover {
             color: red;
         }
 
@@ -167,16 +168,18 @@
             padding: 0px 15px;
             color: grey;
             color: rgb(0, 0, 0, 0.5);
-            border-top: 0.5px solid grey;
+
             border-right: 0.5px solid grey;
             padding: 15px;
             background-color: #FFFAFA;
 
         }
-         #livinghomepage>a{
+
+        #livinghomepage>a {
             text-decoration: none;
             color: gray;
-         }
+        }
+
         #livinghomepage>a:hover {
             color: black;
         }
@@ -185,7 +188,6 @@
             font-style: italic;
             margin: 0px 5px;
         }
-
 
         #search {
             display: flex;
@@ -228,7 +230,7 @@
             align-items: center;
             background-color: #FFFFFF;
             position: sticky;
-            top: 52.5px;
+            top: 52px;
             z-index: 1;
         }
 
@@ -236,260 +238,130 @@
             /* border: 2px solid black; */
             padding: 12px;
             font-size: 15px;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
-
-        }
-
-        /* -----------------------------------------------------------------NAVTOP SALE */
-        #navsale {
-            width: 90%;
-
-            height: aut0;
-            /* border: 2px solid red; */
-            margin: 35px auto;
-        }
-
-        #navsale>img {
-            width: 100%;
-            cursor: pointer;
-        }
-
-        /* --------------------------------------------------------------------> HOME PAGE */
-        #home {
-            width: 90%;
-            margin: 25px auto;
-            /* border: 2px solid red; */
-            height: auto;
-            display: flex;
-
-
-        }
-
-        #home>div {
-            /* border: 2px solid blue; */
-            height: auto;
-        }
-
-        #homegrid {
-            width: 66%;
-            /* border: 2px solid yellow; */
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 10px;
-            gap: 30px 20px;
-            grid-template-areas:
-                "ab ab"
-                "de ef"
-                "gh gh";
-        }
-
-        #homegrid>div {
-            /* border: 2px solid black; */
-            height: auto;
-        }
-
-        #homegrid>div>img {
-            width: 100%;
-        }
-
-        #homegrid>div:nth-child(1) {
-            /* border: 2px solid aqua; */
-            grid-area: ab;
-        }
-
-
-
-        #homegrid>div:nth-child(2) {
-            /* border: 2px solid aqua; */
-            grid-area: de;
-        }
-
-        #homegrid>div:nth-child(3) {
-            /* border: 2px solid aqua; */
-            grid-area: ef;
-        }
-
-        #homegrid>div:nth-child(4) {
-            /* border: 2px solid aqua; */
-            grid-area: gh;
-        }
-
-
-
-        /* --------------------------------------flex------------------------------------------- */
-        #homeflex {
-            width: 33%;
-            margin: auto;
-            /* border: 2px solid blue; */
-            display: flex;
-            flex-direction: column;
-
-        }
-
-
-        #homeflex>div>img {
-            width: 100%;
-            margin: 10px 0px;
-
-
-        }
-
-        #home2 {
-            /* border: 2px solid red; */
-            width: 90%;
-            /* height: 33px; */
-            margin: auto;
-        }
-
-        #home2>img {
-            width: 100%;
-        }
-
-        #slidehomepage {
-            width: 90%;
-            /* border: 2px solid red; */
-            margin: 30px auto 0px auto;
-            height: auto;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 20px;
-
-
-
-            /* font-weight: bo; */
-        }
-
-        #slidehomepage2 {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            margin-top: 30px;
-        }
-
-        #slidehomepage2>div {
-            width: 19%;
-
-        }
-
-
-        #slidehomepage>p {
-            margin-bottom: 15px;
-        }
-
-        #hr {
-            margin-bottom: 15px;
-        }
-
-        #slidehomepage2>div>img {
-            width: 100%;
-        }
-
-        #slidehomepage2>div>p {
-            font-size: 16px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin-bottom: 30px;
-        }
-
-        /* -----------------------------------------BUTTON LEFT RIGHT */
-        #left1 {
-            position: absolute;
-            left: 5px;
-
-            top: 20vh;
-            padding: 8px;
-        }
-
-        #right1 {
-            position: absolute;
-            right: 5px;
-            top: 20vh;
-            padding: 8px;
+            ;
 
         }
 
-        /* --------------------------------------------------------------------------------- */
-
-        #heading>p {
-            text-align: center;
-            color: grey;
-            font-size: 28px;
-            margin: 50px 0px 15px 0px;
-
+          /* Nav Link ------------------------ */
+          #navtop4page>div>a{
+            text-decoration: none;
+            color: black;
+        }
+        #navtop4page>div>a:hover{
+            text-decoration: underline;
+            color: red;
         }
 
-        #hr1 {
-            margin-bottom: 40px;
-        }
 
-        #explore {
-            width: 90%;
-            display: flex;
-            /* border: 2px solid red; */
-            height: auto;
-            margin: auto;
-            justify-content: space-between;
+        /* -------------------------CLOTH CODE OLD ---------------- */
 
-        }
+        #mainproduct-sort{
+        /* border: 2px solid red; */
+        margin-top: 30px;
+       
+        display: flex;
+        justify-content: space-between;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+    }
+    #sort{
+        /* border: 2px solid blue; */
+        width: 17%;
+        height: 600px;
+        
+    }
+    #sort>div{
+        /* border: 2px solid yellow; */
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
 
-        #explore>div>p:nth-child(2) {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-            color: grey;
-            font-size: 22px;
-            margin-top: 5px
-        }
+    #sort>div>p{
+        margin: 5px 0px 15px 0px;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size: 18px;
 
-        #explore>div>p:nth-child(3) {
-            margin-top: 17px;
-            line-height: 18px;
-            font-size: 17px;
-            color: grey;
-            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #filter>select{
+        display: block;
+        width: 90%;
+        font-size: 22px;
+        padding: 5px;
+        margin: 45px 0px;
+        border: none;
+    }
+    #filter>select:hover{
+       background-color: black;
+       color: whitesmoke;
+       
+       border: 2px solid red;
+    }
 
-        }
+    #productpage{
+        /* border: 2px solid green; */
+        height: auto;
+        width: 82.5%;
+        padding: 5px 40px;
+    }
+    #heading{
+         display: flex;
+         justify-content: space-between;
+          margin-bottom: 32px;
+         position: relative;
+    }
+    #heading>p{
+       font-size: 19px;
+       color: grey;
+       margin-top: 6px;
+       
+    }
+    #heading>p:nth-child(2){
+        position: absolute;
+        left: 26%;
 
-        #explore>div {
-            width: 32.5%;
-        }
+    }
+    #heading>p:nth-child(3){
+        position: absolute;
+        left: 62%;
+        font-size: 22px;
+    }
+    
+       
+    #sorting{
+        position: absolute;
+        right: 18.5%;
+        top: 6px;
+        font-size: 18px;
+        padding: 8px;
+        border: 1px solid grey ;
+        border-radius: 12px;
+    }
+    #sorting:hover{
+        border: 2px solid blue
+    }
 
-        #explore>div>img {
-            width: 100%;
-        }
+    #productItems{
+        /* border: 2px solid red ; */
+        width: 100%;
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 35px 20px;
 
-        /* ----------------------------------end-------------------------sale page start */
-        #salepara {
-            text-align: center;
-            margin: 70px 0px;
-            font-size: 18px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: gray;
+        
+    }
+    #productItems>div>img{
+        width: 100%;
+    }
 
-        }
 
-        #hr2 {
-            margin-bottom: 15px;
-        }
+    /* /*  -----------------CLOTH NEW CODE KDBHVFJVHKDBDF HVJD  VDHFVJUDI    */
 
-        #about>h2 {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            
-            margin-bottom: 10px;
-        }
 
-        #about {
-            width: 90%;
-            margin: auto;
-        }
-
-        #about>p {
-            line-height: 19px;
-            margin-bottom: 10px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        /* ----------------------------------------------->footer1 */
-        #footer1 {
+    /* FOOTER CODE ---------------------------------------------- */
+    #footer1 {
             border-top: 1px solid grey;
             border-bottom: 1px solid grey;
             height: 180px;
@@ -637,24 +509,11 @@
             background-color: #FCFBF4;
         }
 
-        #navtop4page>div>a{
-            text-decoration: none;
-            color: black;
-        }
-        #navtop4page>div>a:hover{
-            text-decoration: underline;
-            color: red;
-        }
-        #navsale>a>img{
-            width: 100%;
-        }
 
-
-           
-
+    
+    
     </style>
 </head>
-
 <body>
     <div id="navtop1">
         <div>lifetime</div>
@@ -688,142 +547,81 @@
         </div>
 
     </div>
-
     <div id="navtop4page">
         <div id="page1"><a href="cloth.html">Clothing</a></div>
         <div id="page2"><a href="bedding.html">Bedding</a></div>
         <div id="page3"> <a href="sale.html">Sale</a></div>
     </div>
 
-    <div id="navsale">
-        <a href="sale.html">
-        <img src="https://images.ctfassets.net/5de70he6op10/4tWYuCwv5L2JfLs81bSPiC/e72919ba5d1bf6428d6403c0739ff146/071522_40offSOS_HPG_SecondaryBanner_LS_limitedtime.jpg?w=2882&q=80&fm=webp"
-            alt="" id="salepage">
-        </a>
-    </div>
 
-    <div id="home">
-        <div id="homegrid">
-
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/6L7PLVnwzkVxVSXUzc12WN/013637593738020d6885650c300d2207/LS_M1.jpg?w=1756&q=80&fm=webp"
-                    alt=""></div>
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/PyCTRdNDeeACFfzYKTHc2/785b46381bf9362de695cf48cc35efd9/2UP_Tops.jpg?w=856&q=80&fm=webp"
-                    alt=""></div>
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/4N5KvWIEA9kzUKUvlCjFr9/a3fa55ed35c1e319d26fadaa0468b46e/2UP_NewAccessories.jpg?w=856&q=80&fm=webp"
-                    alt=""></div>
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/1kAlTgmTgNVwEvOdaygujG/24f380d0322fd28b161dbbf9b439d6d4/LS_M2.jpg?w=1756&q=80&fm=webp"
-                    alt=""></div>
-
+    <!-- --------------------------------cloth code -->
+    <div id="mainproduct-sort">
+        <div id="sort">
+         <div> <p>Filter by :</p>
+             <hr>
+         </div>
+           <div id="filter">
+             <select id="product-type">
+             <option value="product">Brand</option>
+             <option value="anthropologie">Anthropologie</option>
+             <option value="agoldy">AGOLDE</option>
+             <option value="amo">Amo</option>
+             <option value="beach riot">Beach Riot</option>
+             <option value="beyond yoga">Beyond Yoga</option>
+         </select>
+ 
+         <select id="Price">
+             <option value="p">Price</option>
+             <option value="25">Less Than $25</option>
+             <option value="50">$25-$50</option>
+             <option value="100">$50-$100</option>
+             <option value="200">$100-$200</option>
+             <option value="500">$200-$500</option>
+         </select>
+ 
+         <select  id="color">
+           <option value="no">Color</option>
+           <option value="white">White</option>
+           <option value="blue">Blue</option>
+           <option value="beige">Beige</option>
+           <option value="green">Green</option>
+           <option value="yellow">Yellow</option>
+           <option value="purple">Purple</option>
+           <option value="grey">Grey</option>
+           <option value="orange">Orange</option>
+           <option value="black">Black</option>
+           <option value="pink">Pink</option>
+           <option value="red">Red</option>
+         </select>
+         
+ 
+ 
+ 
+             
+           </div>
         </div>
-        <!--   ------------------------   flex   -------------- -->
-        <div id="homeflex">
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/5P3JV1EaR9cyojuIDLqJHJ/d8fb7b2a2a98934b77cdf00c338505b4/RR_Jewelry.jpg?w=856&q=80&fm=webp"
-                    alt=""></div>
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/zMXnxHpTVbbedCkuXDs3j/0a25583d2ace13fba8e11b2709f6701a/RR_NewArrivals.jpg?w=856&q=80&fm=webp"
-                    alt=""></div>
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/2A5JcSP9weOEvCYtMm5D8Y/75c5d03edf5e2a36e0a3ca453b1dfee7/RR_BHLDN.jpg?w=856&q=80&fm=webp"
-                    alt=""></div>
-            <div><img
-                    src="https://images.ctfassets.net/5de70he6op10/64HS0WF1TcoLPFrhsQeQzH/676b1f2c8c04a9d6e79d93cdbf4f3220/RR_Jeans.jpg?w=856&q=80&fm=webp"
-                    alt=""></div>
-        </div>
+         <div id="productpage">
+         <div id="heading">
+             <h2>Clothing</h2>
+             <p>Search Results : <span id="counting">0</span> </p>
+             <p>sort</p>
+             <select  id="sorting">
+                 <option value="">Featured</option>
+                 <option value="ascending">Price Low To High</option>
+                 <option value="descending">Price High To Low</option>
+             </select>
+             
+         </div>
+         <div id="productItems">
+             
+         </div>
+     </div>
+     </div>
 
 
-    </div>
+     <!-- --------------------------FOOTER CODE ---------------- -->
 
-    <div id="home2">
-        <img src="https://images.ctfassets.net/5de70he6op10/FVlmjk59pwYLRQ7fpD8TI/98f6c5a1d360224a786a4cbb3f998ab4/LS_M3.jpg?w=2694&q=80&fm=webp"
-            alt="">
-    </div>
-
-    <div id="slidehomepage">
-        <p>You May Also Like</p>
-        <hr id="hr">
-        <div id="slidehomepage2">
-            <div><img
-                    src="https://images.urbndata.com/is/image/Anthropologie/4130464030102_009_b2?$an-category$&qlt=80&fit=constrain"
-                    alt="">
-                <p>Bow-Tie Maxi Dress</p>
-            </div>
-            <div><img
-                    src="https://images.urbndata.com/is/image/Anthropologie/4130880890038_009_b?$an-category$&qlt=80&fit=constrain"
-                    alt="">
-                <p>Farm Rio Embroidered Maxi Dress</p>
-
-            </div>
-            <div><img
-                    src="https://images.urbndata.com/is/image/Anthropologie/4123650590185_030_b2?$an-category$&qlt=80&fit=constrain"
-                    alt="">
-                <p>Maieve Whide Leg Flare Pants</p>
-            </div>
-            <div><img
-                    src="https://images.urbndata.com/is/image/Anthropologie/4110916210129_010_b14?$an-category$&qlt=80&fit=constrain"
-                    alt="">
-                <p>Anthropologie Victorian Sheer-Lace Blouse</p>
-            </div>
-            <div><img
-                    src="https://images.urbndata.com/is/image/Anthropologie/66072398_041_b2?$an-category$&qlt=80&fit=constrain"
-                    alt="">
-                <p>Louisa Dress</p>
-            </div>
-            <button id="left1"><span>
-                    < </span></button>
-            <button id="right1"><span>></span></button>
-
-        </div>
-    </div>
-
-    <div id="heading">
-        <p>
-            More To Explore
-        </p>
-    </div>
-
-    <hr id="hr1">
-    <div id="explore">
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/6tH64sV86gPTuv61SGwSdJ/a1ebca8dd5b76585f243785f9aff1d8a/MTE_01.jpg?w=856&q=80&fm=webp"
-                alt="">
-            <p>Good Jeans: The Denim Fit Guide</p>
-            <p>Introducing the perfect pairs for every wear. From rise to size, here's how to find your new favorite
-                jeans.</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/1VBN5qcyiZzeTQ4o5OGPfP/0d1ca087d53e94d2c8829b74e08ae99d/MTE_Bedding.jpg?w=856&q=80&fm=webp"
-                alt="">
-            <p>Suite Dreams</p>
-            <p>A serene sanctuary encourages relaxation; a superior sanctuary inspires imagination.</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp"
-                alt="">
-            <p>A Greater Good</p>
-            <p>Our priority: to be a force for good, a greater good, in better service of our planet, its people, and
-                our products.</p>
-        </div>
-    </div>
-
-    <div id="salepara">
-        <p>Extra 40% off sale items are final sale. Exclusions apply – see details.</p>
-    </div>
-    <hr id="hr2">
-
-    <div id="about">
-        <h2>About Us</h2>
-        <p>Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive finds
-            for your closet and home. We source and craft all of our products with care, ensuring that any treasure you
-            find at Anthropologie is unique, just like you. Explore our dress shop to find styles and fits perfect for
-            any occasi...</p>
-    </div>
-
-    <div id="footer1">
+     <div id="footer1">
         <div id="signforemail">
             <h2>Sign Up For Email</h2>
             <p>Email Adress</p>
@@ -896,10 +694,9 @@
     </div>
 
 </body>
-
 </html>
 <script>
-    let navtop1data = [
+     let navtop1data = [
         {
             name1: "lifetime",
             name2: "EXTRA 40% OFF ON ALL SALE ITEMS",
@@ -951,74 +748,373 @@
         document.querySelector("#navtop1").style.background = navtop1data[currentvalue].name5
 
     })
+     
+    //  -----------------------------CLOTH CODE ----------------------------
 
-    let homeslidedata = [
-        {
-            img1: "https://images.urbndata.com/is/image/Anthropologie/4130464030102_009_b2?$an-category$&qlt=80&fit=constrain",
-            img2: "https://images.urbndata.com/is/image/Anthropologie/4130880890038_009_b?$an-category$&qlt=80&fit=constrain",
-            img3: "https://images.urbndata.com/is/image/Anthropologie/4123650590185_030_b2?$an-category$&qlt=80&fit=constrain",
-            img4: "https://images.urbndata.com/is/image/Anthropologie/4110916210129_010_b14?$an-category$&qlt=80&fit=constrain",
-            img5: "https://images.urbndata.com/is/image/Anthropologie/66072398_041_b2?$an-category$&qlt=80&fit=constrain",
-
+  let clothdata = [
+        
+ 
+         {
+            img:"https://images.urbndata.com/is/image/Anthropologie/67068759_072_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Mid Somar Bralette" ,
+            price:"22" ,
+            producttype: "anthropologie" ,
+            color:"yellow" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122925890017_072_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Crop Straight Jeans" ,
+            price:"19" ,
+            producttype: "amo" ,
+            color:"yellow" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/68153493_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Lace Bodysuit" ,
+            price:"88" ,
+            producttype: "anthropologie" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/64201411_016_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"V neck Bralette" ,
+            price:"13" ,
+            producttype: "anthropologie" ,
+            color:"" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/66026899_062_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Tie Braker Skort" ,
+            price:"78" ,
+            producttype: "beyond yoga" ,
+            color:"pink" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/69923266_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"High Rise Middi Leggings" ,
+            price:"98" ,
+            producttype: "beyond yoga" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4112449700005_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Layered Cutout Tank" ,
+            price:"88" ,
+            producttype: "anthropologie" ,
+            color:"black" ,
         },
         {
-            img1: "https://images.urbndata.com/is/image/Anthropologie/4130675950009_079_b?$an-category$&qlt=80&fit=constrain",
-            img2: "https://images.urbndata.com/is/image/Anthropologie/4130916210064_010_b2?$an-category$&qlt=80&fit=constrain",
-            img3: "https://images.urbndata.com/is/image/Anthropologie/4130089450010_040_b2?$an-category$&qlt=80&fit=constrain",
-            img4: "https://images.urbndata.com/is/image/Anthropologie/4130464030170_018_b2?$an-category$&qlt=80&fit=constrain",
-            img5: "https://images.urbndata.com/is/image/Anthropologie/4123652010014_052_b2?$an-category$&qlt=80&fit=constrain",
+            img:"https://images.urbndata.com/is/image/Anthropologie/64222805_083_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"T Back Bralette" ,
+            price:"24" ,
+            producttype: "anthropologie" ,
+            color:"red" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/76013069_090_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Bikni Top" ,
+            price:"108" ,
+            producttype: "beach riot" ,
+            color:"Black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/64200108_012_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Seamless Bandeau Bralette" ,
+            price:"56" ,
+            producttype: "anthropologie" ,
+            color:"white" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/64218787_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Longline Bralette" ,
+            price:"24" ,
+            producttype: "anthropologie" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4130916210036_059_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Silk Halter Midi Dress" ,
+            price:"248" ,
+            producttype: "anthropologie" ,
+            color:"yellow" ,
+        },
+          {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4112920000003_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Mock Neck Top" ,
+            price:"48" ,
+            producttype: "anthropologie" ,
+            color:"white" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/67805515_035_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Markie Thong" ,
+            price:"22" ,
+            producttype: "anthropologie" ,
+            color:"yellow" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/67068668_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Lace Hipster Breif" ,
+            price:"16" ,
+            producttype: "anthropologie" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/64820277_009_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Mesh Traingle Bralette" ,
+            price:"15" ,
+            producttype: "anthropologie" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/66568825_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Asymetrical Body Suit" ,
+            price:"148" ,
+            producttype: "agoldy" ,
+            color:"pink" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550573_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Chris Cross Straight Jeans" ,
+            price:"208" ,
+            producttype: "agoldy" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550575_091_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Pinch Waist Jeans" ,
+            price:"198" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
         },
         {
-            img1: "https://images.urbndata.com/is/image/Anthropologie/4130652010053_266_b2?$an-category$&qlt=80&fit=constrain",
-            img2: "https://images.urbndata.com/is/image/Anthropologie/4123650590131_001_b14?$an-category$&qlt=80&fit=constrain",
-            img3: "https://images.urbndata.com/is/image/Anthropologie/4120638570049_032_b2?$an-category$&qlt=80&fit=constrain",
-            img4: "https://images.urbndata.com/is/image/Anthropologie/69046183_266_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-            img5: "https://images.urbndata.com/is/image/Anthropologie/4130370060072_083_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        }
-    ]
+            img:"https://images.urbndata.com/is/image/Anthropologie/64219207_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Seamless Hipster Brief" ,
+            price:"12" ,
+            producttype: "anthropologie" ,
+            color:"black" ,
+        },
+          {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4125225550081_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Stella Shorts" ,
+            price:"148" ,
+            producttype: "agoldy" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4120225550027_045_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Denim Mini Skirt" ,
+            price:"168" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550526_092_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Botcut Jeans" ,
+            price:"198" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4125225550099_107_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Parker Denim Shorts" ,
+            price:"138" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4125225550080_106_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Agolde Stella Shorts" ,
+            price:"145" ,
+            producttype: "agoldy" ,
+            color:"white" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550521_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Cropped Jeans" ,
+            price:"white" ,
+            producttype: "agoldy" ,
+            color:"138" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4125225550082_107_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Stella Vintage Denim Shorts" ,
+            price:"168" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550556_093_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Waist Straight Jeans" ,
+            price:"188" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4125225550102_107_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Long Denim Shorts" ,
+            price:"138" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4112225550052_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Isla Cutout Tank" ,
+            price:"118" ,
+            producttype: "agoldy" ,
+            color:"Black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/54461314_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Ribbed Bodysuit" ,
+            price:"78" ,
+            producttype: "agoldy" ,
+            color:"black" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550527_092_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Distrassed Jeans" ,
+            price:"228" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4115225550030_092_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Denim Jacket" ,
+            price:"198" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550519_092_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Straight Jeans" ,
+            price:"198" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },  {
+            img:"https://images.urbndata.com/is/image/Anthropologie/4122225550524_093_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" ,
+            productname:"Bootcut Jeans" ,
+            price:"198" ,
+            producttype: "agoldy" ,
+            color:"blue" ,
+        },
+  ]
 
-    let imagecount = 0;
-
-    let left1 = document.getElementById("left1")
-    let right1 = document.getElementById("right1")
-
-
-    right1.addEventListener("click", (e) => {
-        imagecount++
-        if (imagecount == homeslidedata.length) {
-            imagecount = 0;
-        }
-        document.querySelector("#slidehomepage2>div:nth-child(1)>img").src = homeslidedata[imagecount].img1
-        document.querySelector("#slidehomepage2>div:nth-child(2)>img").src = homeslidedata[imagecount].img2
-        document.querySelector("#slidehomepage2>div:nth-child(3)>img").src = homeslidedata[imagecount].img3
-        document.querySelector("#slidehomepage2>div:nth-child(4)>img").src = homeslidedata[imagecount].img4
-        document.querySelector("#slidehomepage2>div:nth-child(5)>img").src = homeslidedata[imagecount].img5
-
-
-    })
-    left1.addEventListener("click", (e) => {
-        imagecount--
-        if (imagecount < 0) {
-            imagecount = homeslidedata.length - 1
-        }
-        document.querySelector("#slidehomepage2>div:nth-child(1)>img").src = homeslidedata[imagecount].img1
-        document.querySelector("#slidehomepage2>div:nth-child(2)>img").src = homeslidedata[imagecount].img2
-        document.querySelector("#slidehomepage2>div:nth-child(3)>img").src = homeslidedata[imagecount].img3
-        document.querySelector("#slidehomepage2>div:nth-child(4)>img").src = homeslidedata[imagecount].img4
-        document.querySelector("#slidehomepage2>div:nth-child(5)>img").src = homeslidedata[imagecount].img5
-
-
-    })
-  
-
-    // border-----------------------------------------------------------------change
-    let title=  document.querySelector("title").innerText
-        if(title == "Anthro Living Home"){
-            document.querySelector("#livinghomepage").style.borderTop="6px solid brown"
+  let total = document.querySelector("#counting")
+     
+     display(clothdata)
+ 
+ //  -----------------------------------FILTER BY PRODUCT TYPE 
+     let productType = document.querySelector("#product-type")
+     productType.addEventListener("change" ,(e)=>{
+          let productValue = document.querySelector("#product-type").value 
+          if(productValue == "product"){
+             display(clothdata)
+          }
+          else{
+          let productSort = clothdata.filter((e)=>{
+              return e.producttype==productValue
+          })
+          display(productSort)
+          }
+     })
+ 
+     // FILTER BY PRICE ----------------------------------------------------------->
+       
+     let price = document.querySelector("#Price")
+     price.addEventListener("change" ,(e)=>{
+         let priceValue = document.querySelector("#Price").value
+            if(priceValue == "p"){
+             display(clothdata)
+             
+         }
+ 
+            else{
+                      if(priceValue == "25"){
+                 let less = clothdata.filter((e)=>{
+                      return Number(e.price) < Number(priceValue) && (e.productname !== "")
+                 })
+                 display(less)
+            }
+            else if(priceValue == 50){
+             let less = clothdata.filter((e)=>{
+                      return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(25))
+                 })
+                 display(less)
+             }
+             else if(priceValue == 100){
+             let less = clothdata.filter((e)=>{
+                      return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(50))
+                 })
+                 display(less)
+             }
+             else if(priceValue == 200){
+             let less = clothdata.filter((e)=>{
+                      return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(100))
+                 })
+                 display(less)
+             }
+             else if(priceValue == 500){
+             let less = clothdata.filter((e)=>{
+                      return Number(e.price) < Number(priceValue) && (Number(e.price) >= Number(200))
+                 })
+                 display(less)
+             }
+             
+         }
+ 
+     })
+ 
+     // filter by color ----------------------------------------->
+       
+     let color = document.querySelector("#color")
+     color.addEventListener("change",(e)=>{
+         let colorValue = document.querySelector("#color").value 
             
-        }
-        else if(title == "Anthropologie"){
-            document.querySelector("#homepage").style.borderTop="7px solid teal"
+         if(colorValue == "no"){
+             display(clothdata)
+         }
+         else{
+         let colorsort = clothdata.filter((e)=>{
+               return e.color == colorValue
+         })
+         display(colorsort)
+     }
+     })
+     
+     // ---------------------------------------------------------------ascending sort ---
+ 
+     let ascen = document.querySelector("#sorting")
+     ascen.addEventListener("change" ,(e)=>{
+           let ascenValue = document.querySelector("#sorting").value 
             
-        }
+           if(ascenValue == "ascending"){
+            clothdata.sort(function(a,b){
+                 if(+a.price > +b.price) return 1 
+                 if(+a.price < +b.price) return -1 
+             })
+             display(clothdata)
+         }
+         if(ascenValue == "descending"){
+            clothdata.sort(function(a,b){
+                 if(+a.price > +b.price) return -1 
+                 if(+a.price < +b.price) return 1 
+             })
+             display(clothdata)
+         }
+     })
+     
+     function display(clothdata){
+ 
+           
+ 
+ 
+ 
+ 
+         document.querySelector("#productItems").innerHTML = ""
+         let count = 0 ;
+         clothdata.forEach(function (elem){
+         count++
+         let div = document.createElement("div")
+ 
+         let img = document.createElement("img")
+         img.src=elem.img
+         let name = document.createElement("p")
+         name.innerText=elem.productname
+         name.style.fontSize="14px"
+         let price = document.createElement("p")
+         if(elem.price !== ""){
+         price.innerText ="$"+elem.price
+         price.style.color="grey"
+         price.style.fontSize="14px"
+         }
+ 
+ 
+         div.append(img,name,price)
+         document.querySelector("#productItems").append(div)
+     })
+ 
+     if(count == 0){
+         total.innerText="Sorry Item Is Out Of Stock"
+     }
+     else{
+ 
+         total.innerText = count
+     }
+     
+ 
+ }
+ 
+ 
 </script>
