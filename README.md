@@ -10,7 +10,7 @@
 
 <ul>
 <b><li>Different pages based on different category</li></b>
-<b><li><Variety of filter option's, on every page.</li></b>
+<b><li><Variety of filter options, on every page </li></b>
 </ul>
 
 
