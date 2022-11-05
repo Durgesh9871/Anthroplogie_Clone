@@ -41,20 +41,20 @@ Implemented filter base on price, color, brand, sorting price high to low, low t
 
 ###### Login Page
 
-![Screenshot (30)]
-![Screenshot (30)]
+![Screenshot (30)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/SignUp/Screenshot%20(20).png?raw=true)
+![Screenshot (30)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/SignUp/Screenshot%20(29).png?raw=true)
 
 
 
 ###### Clothing Page
 
-![Screenshot (12)]()
+![Screenshot (12)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/ClothPage/Screenshot%20(14).png?raw=true)
 
-![Screenshot (13)]()
+![Screenshot (13)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/ClothPage/Screenshot%20(18).png?raw=true)
 
 ###### Bedding Page
 
-![Screenshot (22)]()
+![Screenshot (22)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/BeddingPage/Screenshot%20(19).png?raw=true)
 
 
 
