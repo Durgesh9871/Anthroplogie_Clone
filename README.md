@@ -29,13 +29,13 @@ Implemented filter base on price, color, brand, sorting price high to low, low t
 ### Screenshort
 
 ###### Home Page
-![Screenshot (7)]
+![Screenshot (7)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/HomePage/Screenshot%20(10).png?raw=true)
 
-![Screenshot (8)]
+![Screenshot (8)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/HomePage/Screenshot%20(11).png?raw=true)
 
-![Screenshot (9)]
+![Screenshot (9)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/HomePage/Screenshot%20(12).png?raw=true)
 
-![Screenshot (10)]
+![Screenshot (10)](https://github.com/Durgesh9871/ReadmeImages/blob/main/Anthro_Image/HomePage/Screenshot%20(13).png?raw=true)
 
 
 
@@ -48,13 +48,13 @@ Implemented filter base on price, color, brand, sorting price high to low, low t
 
 ###### Clothing Page
 
-![Screenshot (12)](https://user-images.githubusercontent.com/100186167/180634557-5162d35e-565d-43fd-adb9-e7dfa8faf766.png)
+![Screenshot (12)]()
 
-![Screenshot (13)](https://user-images.githubusercontent.com/100186167/180634558-729ef21a-c982-407e-99ac-318c06978e98.png)
+![Screenshot (13)]()
 
 ###### Bedding Page
 
-![Screenshot (22)](https://user-images.githubusercontent.com/100186167/180634574-1f7dd125-5c4e-440e-bed4-06db44065039.png)
+![Screenshot (22)]()
 
 
 
