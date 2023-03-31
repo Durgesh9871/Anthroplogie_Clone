@@ -1,4 +1,8 @@
- ## Anthropologie
+<h1 align="center">Anthropologie</h1>
+
+# Deployed URL 👉 [Click here](https://aquamarine-fenglisu-ddf06e.netlify.app/index.html)
+
+# Individual Project 
  
 Anthropologie is a unique, with a mostly exclusive assortment of clothing, accessories, home décor etc. This website is mainly for women we have large variety of cloths and accessories for them.   
 
